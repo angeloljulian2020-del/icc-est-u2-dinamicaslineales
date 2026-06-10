@@ -10,12 +10,24 @@ public class App {
         runQueue();
         runStack();
 
+        System.out.println("Ejercicio 1");
+
         Ejercicio1 ejercicio1 = new Ejercicio1();
         String texto = "COMPUTACION";
         String invertido = ejercicio1.invertString(texto);
         System.out.println(invertido);
         System.out.println("Texto original " + texto);
-        System.out.println("Invertido" + invertido);
+        System.out.println("Invertido: " + invertido);
+
+        System.out.println("Ejercicio 2");
+
+        Ejercicio2 ejercicio2 = new Ejercicio2();
+
+        String palabra1 = "radar";
+        String palabra2 = "computacion";
+
+        System.out.println("Es palindromo radar: " + ejercicio2.esPalindromo(palabra1));
+        System.out.println("Es palindromo computacion: " + ejercicio2.esPalindromo(palabra2));
 
     }
 
